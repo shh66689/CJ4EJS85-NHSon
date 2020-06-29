@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        1.
+        let product = {
+            name: "Xiaomi rice cooker",
+            price: 1700,
+            brand: "Xiaomi",
+            color: "white"
+        };
+        for (let property in product) {
+            console.log(`${property}: ${product[property]}`);
+
+        }
+        2.
+        let task = {
+            subject: 'Implement login feature',
+            createdBy: 'Hoang Ngoc Duc',
+            assignTo: 'Nguyen Phuong Nam',
+            dueDate: '2019-10-08T18: 00:24+0000',
+            expectedHours: 0.5,
+        };
+        var date = task.dueDate;
+        var assign = task.assignTo;
+        console.log(date);
+        console.log(assign);
+        3.
+        4.
+        let dictionary = {
+            debug: 'The process of figuring out why your program has a certain error and how to fix it',
+            done: 'When your task is complete, the only thing you have to do is to wait for users to use it (no additional codes or actions neeeded)',
+            defect: 'The formal word for error',
+            pm: 'The short version of Project Manager, the person in charge of the final result of a project',
+            ui: 'Ui mean User interface, UX mean User Experience, are the process to define how your products looks and feels'
+
+        };
+        console.log(EX4 - 1);
+        alert('Hi there,this is dev dictionary');
+        let keyword = prompt('Enter a keyword');
+        for (let checkDic in dictionary) {
+            If(checkDic == keyword)
+            alert(keyword + ":" + dictionary[checkDic]);
+            break;
+        }
+            
+        If(checkDic != keyword)
+            alert('We could not find your word: ' + checkDic)
+        
+        console.log(EX4 - 2);
+        alert("Hi there, this is dev dictionary");
+        while (true) {
+            let keyword = prompt("Enter a keyword");
+            for (var checkDic in dictionary) {
+                if (keyword == checkDic) {
+                    alert(keyword + ": " + dictionary[checkDic]);
+                    break;
+                }
+            }
+            if (keyword != checkDic) {
+                let updateValue = prompt(
+                    "We could not find your word: " + keyword + " leave your explanation"
+                );
+                alert("Done");
+                dictionary[keyword] = updateValue;
+            }
+        }
+        console.log(EX5);
+        let product = [
+            {
+                name: "Xiaomi portable charger 20000mah",
+                brand: "Xiaomi",
+                price: 428,
+                category: "Charger",
+                color: "White",
+            },
+            {
+                name: "VSmart Active 1",
+                brand: "VSmart",
+                price: 5487,
+                category: "Phone",
+                color: "Black",
+            },
+            {
+                name: "IPhone X",
+                brand: "Apple",
+                price: 21490,
+                category: "Phone",
+                color: "Gray",
+            },
+            {
+                name: "Samsung Galaxy A9",
+                brand: "Samsung",
+                price: 8490,
+                category: "Phone",
+                color: "Blue",
+            }
+        ]
+        for (let Valueproduct in product)
+            console.log('Name: ' + product[Valueproduct]);
+        console.log('Price: ' + product[Valueproduct]);
+        console.log(EX5 - 2);
+        let positionProduct = Number(prompt("Enter product position"));
+        for (let i = 0; i < products.length; i++) {
+            if (positionProduct == i) {
+                console.log("Name: " + products[i].name);
+                console.log("Brand: " + products[i].brand);
+                console.log("Price: " + products[i].price);
+                console.log("Color:  " + products[i].color);
+                console.log("Category: " + products[i].category);
+
+            }
+        }
+
+        console.log(EX5 - 3);
+        let categoryValues = prompt('Enter your category');
+        for (let product of products) {
+            if (product.category == categoryValues) {
+                console.log("Name: " + product.name);
+                console.log("Price: " + product.price);
+
+            }
+        }
+        console.log(EX6);
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
