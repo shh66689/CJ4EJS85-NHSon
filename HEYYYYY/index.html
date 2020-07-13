@@ -6,18 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-<script>
-var x = 0, b = 10
-var x = b++ ; 
-console.log(x);
-let name = 'Toi ten là Hoang' ;
-let sinhNam = `${5*5}`;
-let que = `Hai Duong  ${sinhNam}`; 
-console.log(name + " " + que  + 'tuoi');
-var x = 0 ; 
-for (; x< 5 ; x++); 
-console.log(x);
-
-</script>
+    <h3>Chao mung ban den voi cac</h3>
+    <div oncopy= "cuccut()"> "Hn that la dep"</div>
+    <script>
+        function cuccut(){
+            alert('Ban da copy thanh cong')
+        };
+    </script>
+    
+    <input type="text" id="message" value="" onkeyup="show_result()"/>
+    <div id="result"></div>
+    <script>
+        function show_result(){
+        var input = document.getElementById("message")
+        var div = document.getElementById("result")
+         div.innerHTML=input.value
+        }
+    </script>
 </body>
 </html>
